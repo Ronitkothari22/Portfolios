@@ -1,4 +1,7 @@
 import {
+  c,
+  cplus,
+  java,
     flask,
     farzi,
     flutter,
@@ -89,6 +92,7 @@ import {
         name: "CSS 3",
         icon: css,
       },
+      
       {
         name: "JavaScript",
         icon: javascript,
@@ -97,13 +101,14 @@ import {
         name: "Python",
         icon: python,
       },
+  
       {
         name: "React JS",
         icon: reactjs,
       },
       {
-        name: "Redux Toolkit",
-        icon: redux,
+        name: "C",
+        icon: c,
       },
       {
         name: "Tailwind CSS",
@@ -122,8 +127,8 @@ import {
         icon: threejs,
       },
       {
-        name: "git",
-        icon: git,
+        name: "Java",
+        icon: java,
       },
       {
         name: "Flutter",

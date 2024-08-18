@@ -35,8 +35,13 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import clumoss from "./company/clumoss.png";
 import topialifescience from"./company/topialifescience.png";
-
+import c from "./tech/C.png";
+import cplus from "./tech/C++.png";
+import java from "./tech/java.png";
 export {
+  java,
+  c,
+  cplus,
   flask,
   farzi,
   attendx,
