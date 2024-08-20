@@ -339,7 +339,7 @@ import {
           },
         ],
         image: attendx, // You'll need to import this image
-        source_code_link: "https://github.com/ProdigyRahul/AttendX", // Replace with actual link
+        source_code_link: "https://github.com/Ronitkothari22/AttendX", // Replace with actual link
       },
       {
         name: "Inventory Management System",
@@ -360,7 +360,7 @@ import {
           },
         ],
         image: tripguide, // You'll need to import this image
-        source_code_link: "https://github.com/", // Replace with actual link
+        source_code_link: "https://github.com/Ronitkothari22/HealthCare_Mobile_Application", // Replace with actual link
       },
       {
         name: "Farzi: Fake News Detector",
