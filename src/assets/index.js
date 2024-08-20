@@ -38,7 +38,9 @@ import topialifescience from"./company/topialifescience.png";
 import c from "./tech/C.png";
 import cplus from "./tech/C++.png";
 import java from "./tech/java.png";
+import doctor from "./doctor.png";
 export {
+  doctor,
   java,
   c,
   cplus,

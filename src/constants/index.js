@@ -1,4 +1,5 @@
 import {
+  doctor,
   c,
   cplus,
   java,
@@ -342,26 +343,27 @@ import {
         source_code_link: "https://github.com/Ronitkothari22/AttendX", // Replace with actual link
       },
       {
-        name: "Inventory Management System",
+        name: "Doctor Appointment App",
         description:
-          "A robust system enabling real-time stock updates and efficient inventory tracking with an automated alert system for stock level notifications.",
+          "An innovative platform designed to minimize patient waiting times by providing real-time updates and smart appointment scheduling, ensuring a seamless healthcare experience.",
         tags: [
           {
-            name: "python",
+            name: "Flutter",
             color: "blue-text-gradient",
           },
           {
-            name: "database",
+            name: "Efficiency",
             color: "green-text-gradient",
           },
           {
-            name: "alert-system",
+            name: "Firebase",
             color: "pink-text-gradient",
           },
         ],
-        image: tripguide, // You'll need to import this image
+        image: doctor, // You'll need to import this image
         source_code_link: "https://github.com/Ronitkothari22/HealthCare_Mobile_Application", // Replace with actual link
       },
+      
       {
         name: "Farzi: Fake News Detector",
         description:
