@@ -168,7 +168,7 @@ const FancyEffect = () => {
         ctx.globalCompositeOperation = 'source-over';
         ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
         ctx.globalCompositeOperation = 'lighter';
-        ctx.strokeStyle = '#00ffff'; // Change color here
+        ctx.strokeStyle = '#a66cff';
         ctx.lineWidth = 1;
         for (let t = 0; t < AnimationFeature.trails; t++) {
           if (newLines[t]) {
