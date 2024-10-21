@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { MessageCircle } from 'lucide-react';
 
 const ChatBotIcon = ({ toggleChat }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -11,7 +10,9 @@ const ChatBotIcon = ({ toggleChat }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <MessageCircle size={32} color="#ffffff" />
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="chat-icon">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
       <style jsx>{`
         .chat-bot-icon {
           position: fixed;
@@ -28,6 +29,12 @@ const ChatBotIcon = ({ toggleChat }) => {
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
           transition: all 0.3s ease;
           z-index: 1000;
+        }
+
+        .chat-icon {
+          width: 32px;
+          height: 32px;
+          color: #ffffff;
         }
 
         .chat-bot-icon:hover {
