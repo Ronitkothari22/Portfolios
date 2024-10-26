@@ -993,7 +993,7 @@ const ChatWindow = ({ toggleChat }) => {
 
   const MAX_MESSAGES = 7;
   const COOLDOWN_PERIOD = 60 * 60 * 1000; // 1 hour in milliseconds
-
+ 
   useEffect(() => {
     checkBlockStatus();
     setMessages([{ sender: 'bot', message: "Hello! How can I assist you today?" }]);
@@ -1159,7 +1159,7 @@ const ChatWindow = ({ toggleChat }) => {
           display: flex;
           flex-direction: column;
           font-family: 'Arial', sans-serif;
-          z-index: 1000;
+          z-index: 999;
         }
 
         .chat-header {
@@ -1226,7 +1226,6 @@ const ChatWindow = ({ toggleChat }) => {
           border-bottom-left-radius: 12px;
           border-bottom-right-radius: 12px;
           align-items: center;
-          z-index: 1001;
         }
 
         .chat-footer input {
@@ -1257,6 +1256,8 @@ const ChatWindow = ({ toggleChat }) => {
           align-items: center;
           justify-content: center;
           transition: background-color 0.3s ease;
+          position: relative;
+          z-index: 998;
         }
 
         .send-btn:hover {
@@ -1271,7 +1272,7 @@ const ChatWindow = ({ toggleChat }) => {
         @media (max-width: 768px) {
           .chat-window {
             width: 100%;
-            height: 100%;
+            height: calc(100% - 60px); /* Subtract height of the chat bot icon */
             bottom: 0;
             right: 0;
             border-radius: 0;
@@ -1283,6 +1284,13 @@ const ChatWindow = ({ toggleChat }) => {
 
           .chat-footer {
             border-radius: 0;
+            position: relative;
+            z-index: 998;
+          }
+
+          .send-btn {
+            position: relative;
+            z-index: 998;
           }
         }
       `}</style>
@@ -1291,4 +1299,3 @@ const ChatWindow = ({ toggleChat }) => {
 };
 
 export default ChatWindow;
-
